@@ -1,7 +1,6 @@
 import {
   Breadcrumbs,
   Divider,
-  Header,
   ListContainer,
   ListContent,
   ListHead,
@@ -16,13 +15,14 @@ import PlusIcon from '../../../assets/icons/Plus.svg'
 import PlusIcon2 from '../../../assets/icons/Plus2.svg'
 import projectsData from './teste.json' // Importando os dados do JSON
 import { SideBar } from '../../../components/sideBar'
+import { Header } from '../../../components/header'
 
 export function AdminProjectsList() {
   return (
     <PageContainer>
       <SideBar></SideBar>
       <div>
-        <Header></Header>
+        <Header />
 
         <ProjectsContainer>
           <Breadcrumbs>Fetin 2024 / Projetos / Lista</Breadcrumbs>
