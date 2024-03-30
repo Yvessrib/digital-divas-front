@@ -18,6 +18,13 @@ export const ProjectsContainer = styled.div`
   margin: 48px;
 `
 
+export const Breadcrumbs = styled.span`
+  font-size: 12px;
+  font-weight: 500;
+  color: #94a3b8;
+  margin-bottom: 20px;
+`
+
 export const ProjectsHeader = styled.div`
   display: flex;
   justify-content: space-between;
@@ -74,12 +81,16 @@ export const ListHead = styled.div`
   button {
     background-color: #fff;
     border: none;
-    border-bottom: 1px solid #0159ea;
-    color: #1e293b;
     font-size: 14px;
     font-weight: bold;
     padding: 12px 24px;
     z-index: 1;
+    border-bottom: 1px solid #989898;
+  }
+
+  button:nth-child(1) {
+    border-bottom: 1px solid #0159ea;
+    color: #1e293b;
   }
 `
 export const Divider = styled.div`
