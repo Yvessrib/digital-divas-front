@@ -1,7 +1,9 @@
+import { AdminProjectsList } from './pages/admin/projects'
+
 export function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
+      <AdminProjectsList />
     </div>
   )
 }
