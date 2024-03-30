@@ -1,4 +1,5 @@
 import {
+  Breadcrumbs,
   Divider,
   Header,
   ListContainer,
@@ -24,6 +25,7 @@ export function AdminProjectsList() {
         <Header></Header>
 
         <ProjectsContainer>
+          <Breadcrumbs>Fetin 2024 / Projetos / Lista</Breadcrumbs>
           <ProjectsHeader>
             <span>Todos os Projetos</span>
             <ProjectsHeaderButtons>
