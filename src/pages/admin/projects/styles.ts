@@ -9,11 +9,7 @@ export const PageContainer = styled.div`
   display: flex;
   flex-direction: row;
 `
-export const Header = styled.div`
-  height: 88px;
-  width: 1075px;
-  background-color: #bbbbbb;
-`
+
 export const ProjectsContainer = styled.div`
   margin: 48px;
 `
