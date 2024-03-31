@@ -1,9 +1,9 @@
-import { AdminProjectsList } from './pages/admin/projects'
+import { AdminProjectsSignIn } from './pages/admin/projectsSignIn'
 
 export function App() {
   return (
     <div>
-      <AdminProjectsList />
+      <AdminProjectsSignIn />
     </div>
   )
 }
