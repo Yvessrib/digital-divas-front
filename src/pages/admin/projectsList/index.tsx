@@ -15,7 +15,6 @@ import PlusIcon from '../../../assets/icons/Plus.svg'
 import PlusIcon2 from '../../../assets/icons/Plus2.svg'
 import projectsData from './teste.json' // Importando os dados do JSON
 import { SideBar } from '../../../components/sideBar'
-import { Header } from '../../../components/header'
 
 export function AdminProjectsList() {
   return (
