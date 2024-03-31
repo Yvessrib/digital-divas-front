@@ -3,6 +3,7 @@ import { styled } from 'styled-components'
 export const PageContainer = styled.div`
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 `
 
 export const ProjectsContainer = styled.div`
