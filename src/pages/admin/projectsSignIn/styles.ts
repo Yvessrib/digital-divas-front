@@ -27,6 +27,8 @@ export const ProjectsHeader = styled.div`
   }
 `
 export const ProjectFormContainer = styled.div`
+  margin-top: 48px;
+
   form {
     label {
       font-size: 14px;
