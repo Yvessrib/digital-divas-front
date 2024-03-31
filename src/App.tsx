@@ -1,9 +1,9 @@
-import { AdminProjectsSignIn } from './pages/admin/projectsSignIn'
+import { LoginPage } from './pages/login'
 
 export function App() {
   return (
     <div>
-      <AdminProjectsSignIn />
+      <LoginPage />
     </div>
   )
 }
