@@ -4,6 +4,7 @@ export const SideBarContainer = styled.div`
   width: 250px;
   height: 100vh;
   position: sticky;
+  border-right: 1px solid #94a3b8;
 `
 export const SideBarHeader = styled.div`
   display: flex;
