@@ -1,9 +1,17 @@
-import { HeaderContainer } from './style'
+import { HeaderContainer, HeaderIcon, HeaderInfo, HeaderUser } from './style'
 
 export function Header() {
   return (
     <HeaderContainer>
-      <span>Componente header ainda não desenvolvido</span>
+      <HeaderInfo>
+        <HeaderUser>
+          <span>Bárbara Barbieri</span>
+          <span>Adminstradora</span>
+        </HeaderUser>
+        <HeaderIcon>
+          <span>BB</span>
+        </HeaderIcon>
+      </HeaderInfo>
     </HeaderContainer>
   )
 }
