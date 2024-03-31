@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const SideBarContainer = styled.div`
   width: 250px;
   height: 100vh;
+  position: sticky;
 `
 export const SideBarHeader = styled.div`
   display: flex;
