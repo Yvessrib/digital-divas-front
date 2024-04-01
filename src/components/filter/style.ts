@@ -2,7 +2,7 @@ import { styled } from 'styled-components'
 
 export const FilterContainer = styled.div`
   display: flex;
-  gap: 8px;
+  gap: 10px;
   margin: 10px 0;
 
   button {
@@ -13,7 +13,7 @@ export const FilterContainer = styled.div`
 
     div {
       display: flex;
-      gap: 2px;
+      gap: 6px;
       align-items: center;
     }
   }
