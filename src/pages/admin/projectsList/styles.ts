@@ -1,16 +1,5 @@
 import styled from 'styled-components'
 
-export const PageContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-`
-
-export const ContentContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-`
-
 export const ProjectsContainer = styled.div`
   margin: 122px 48px 48px 298px;
 `
@@ -19,7 +8,6 @@ export const Breadcrumbs = styled.span`
   font-size: 12px;
   font-weight: 500;
   color: #94a3b8;
-  margin-bottom: 20px;
 `
 
 export const ProjectsHeader = styled.div`
