@@ -20,7 +20,7 @@ import { Header } from '../../../components/header'
 import { Link } from 'react-router-dom'
 import { FilterBarAndButton } from '../../../components/filter'
 
-export function AdminProjectsList() {
+export function AdminUsersList() {
   return (
     <PageContainer>
       <SideBar></SideBar>
@@ -28,9 +28,9 @@ export function AdminProjectsList() {
         <Header />
 
         <ProjectsContainer>
-          <Breadcrumbs>Fetin 2024 / Projetos / Lista</Breadcrumbs>
+          <Breadcrumbs>Fetin 2024 / Usuários / Lista</Breadcrumbs>
           <ProjectsHeader>
-            <span>Todos os Projetos</span>
+            <span>Todos os Usuários</span>
             <ProjectsHeaderButtons>
               <button>
                 <div>
@@ -52,14 +52,11 @@ export function AdminProjectsList() {
               </button>
             </ProjectsHeaderButtons>
           </ProjectsHeader>
-
           <ListContainer>
             <ListHead>
-              <button>Todos os níveis</button>
-              <button>Nível 1</button>
-              <button>Nível 2</button>
-              <button>Nível 3</button>
-              <button>Nível 4</button>
+              <button>ALUNOS</button>
+              <button>ORIENTADORES</button>
+              <button>ADMINSTRADORES</button>
             </ListHead>
             <Divider></Divider>
             <FilterBarAndButton />

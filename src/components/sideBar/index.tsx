@@ -14,6 +14,7 @@ import CheckIcon from '../../assets/icons/tick-square.svg'
 import CupIcon from '../../assets/icons/cup.svg'
 import ProfileIcon from '../../assets/icons/profile-2user.svg'
 import FetinLogo from '../../assets/imgs/FetinLogo.svg'
+import { Link } from 'react-router-dom'
 
 export function SideBar() {
   return (
@@ -24,22 +25,28 @@ export function SideBar() {
       </SideBarHeader>
       <SideBarContent>
         <SideBarButtons>
-          <button>
-            <img src={HomeIcon} alt="" />
-            <span>Início</span>
-          </button>
+          <Link to={'/'} style={{ textDecoration: 'none' }}>
+            <button>
+              <img src={HomeIcon} alt="" />
+              <span>Início</span>
+            </button>
+          </Link>
           <button>
             <img src={CheckIcon} alt="" />
             <span>Etapas</span>
           </button>
-          <button>
-            <img src={CupIcon} alt="" />
-            <span>Projetos</span>
-          </button>
-          <button>
-            <img src={ProfileIcon} alt="" />
-            <span>Usuários</span>
-          </button>
+          <Link to={'/admin/projectsList'} style={{ textDecoration: 'none' }}>
+            <button>
+              <img src={CupIcon} alt="" />
+              <span>Projetos</span>
+            </button>
+          </Link>
+          <Link to={'/admin/usersList'} style={{ textDecoration: 'none' }}>
+            <button>
+              <img src={ProfileIcon} alt="" />
+              <span>Usuários</span>
+            </button>
+          </Link>
           <button>
             <img src={ProfileIcon} alt="" />
             <span>Configurações</span>
