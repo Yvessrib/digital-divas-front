@@ -14,6 +14,7 @@ import {
 import digitalLogo from '../../assets/imgs/DigitalDivasLogo.svg'
 import loginFetinLogo from '../../assets/imgs/logoLogin.svg'
 import iconBotao from '../../assets/icons/Plus2.svg'
+import { Link } from 'react-router-dom'
 
 export function LoginPage() {
   return (
@@ -41,7 +42,9 @@ export function LoginPage() {
               <button>
                 <div>
                   <span>Entrar</span>
-                  <img src={iconBotao} alt="" />
+                  <Link to={'/admin/projectsList'}>
+                    <img src={iconBotao} alt="" />
+                  </Link>
                 </div>
               </button>
             </FormFooter>
