@@ -1,31 +1,26 @@
 import { styled } from 'styled-components'
 
-export const PageContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-`
-
 export const ProjectsContainer = styled.div`
   margin: 122px 48px 48px 298px;
 `
 
 export const ProjectsHeader = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
 
-  span:nth-child(1) {
-    font-size: 12px;
-    font-weight: 500;
-    color: #94a3b8;
-    margin-bottom: 20px;
-  }
-
-  span:nth-child(2) {
+  span {
     font-size: 40px;
     color: #1e293b;
     font-weight: bold;
   }
+`
+
+export const Breadcrumbs = styled.span`
+  font-size: 12px;
+  font-weight: 500;
+  color: #94a3b8;
+  margin-bottom: 20px;
 `
 export const ProjectFormContainer = styled.div`
   margin-top: 48px;
