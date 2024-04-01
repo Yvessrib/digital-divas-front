@@ -14,7 +14,7 @@ import {
 
 import PlusIcon from '../../../assets/icons/Plus.svg'
 import PlusIcon2 from '../../../assets/icons/Plus2.svg'
-import projectsData from './teste.json' // Importando os dados do JSON
+import usersData from './teste.json' // Importando os dados do JSON
 import { SideBar } from '../../../components/sideBar'
 import { Header } from '../../../components/header'
 import { Link } from 'react-router-dom'
@@ -66,23 +66,23 @@ export function AdminUsersList() {
                   <tr>
                     <th>ID</th>
                     <th>Nome</th>
-                    <th>Nível</th>
-                    <th>Equipe</th>
-                    <th>Orientador</th>
-                    <th>Etapa</th>
-                    <th>Status</th>
+                    <th>Mat.</th>
+                    <th>Curso</th>
+                    <th>Período</th>
+                    <th>Instituto de Ensino</th>
+                    <th>País</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {projectsData.map((project) => (
-                    <tr key={project.id}>
-                      <td>{project.id}</td>
-                      <td>{project.nome}</td>
-                      <td>{project.nivel}</td>
-                      <td>{project.equipe}</td>
-                      <td>{project.orientador}</td>
-                      <td>{project.etapa}</td>
-                      <td>{project.status}</td>
+                  {usersData.map((users) => (
+                    <tr key={users.id}>
+                      <td>{users.id}</td>
+                      <td>{users.nome}</td>
+                      <td>{users.mat}</td>
+                      <td>{users.curso}</td>
+                      <td>{users.periodo}</td>
+                      <td>{users.instituicao}</td>
+                      <td>{users.pais}</td>
                     </tr>
                   ))}
                 </tbody>
