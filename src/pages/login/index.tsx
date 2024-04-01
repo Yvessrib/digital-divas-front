@@ -39,17 +39,18 @@ export function LoginPage() {
             </InputContainer>
             <FormFooter>
               <a>Esqueci minha senha</a>
-              <button>
-                <div>
-                  <span>Entrar</span>
-                  <Link
-                    to={'/admin/projectsList'}
-                    style={{ textDecoration: 'none' }}
-                  >
+              <Link
+                to={'/admin/projectsList'}
+                style={{ textDecoration: 'none' }}
+              >
+                <button>
+                  <div>
+                    <span>Entrar</span>
+
                     <img src={iconBotao} alt="" />
-                  </Link>
-                </div>
-              </button>
+                  </div>
+                </button>
+              </Link>
             </FormFooter>
           </form>
         </LoginForm>
