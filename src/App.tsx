@@ -1,9 +1,3 @@
-import { LoginPage } from './pages/login'
-
 export function App() {
-  return (
-    <div>
-      <LoginPage />
-    </div>
-  )
+  return <h1>App</h1>
 }
