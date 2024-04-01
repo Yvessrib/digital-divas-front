@@ -1,13 +1,14 @@
-import  styled  from 'styled-components'
+import styled from 'styled-components'
 
-export const SideBar = styled.div`
-  width: 252px;
-  height: 100vh;
-  background-color: #aaaAaa;;
-`
 export const PageContainer = styled.div`
   display: flex;
   flex-direction: row;
+`
+
+export const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 `
 
 export const ProjectsContainer = styled.div`
@@ -61,6 +62,8 @@ export const ProjectsHeaderButtons = styled.div`
     background-color: #306bff;
     color: #fff;
     border-color: #306bff;
+    cursor: pointer;
+    text-decoration: none;
   }
 `
 

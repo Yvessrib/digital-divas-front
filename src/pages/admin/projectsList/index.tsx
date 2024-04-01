@@ -1,5 +1,6 @@
 import {
   Breadcrumbs,
+  ContentContainer,
   Divider,
   ListContainer,
   ListContent,
@@ -22,7 +23,7 @@ export function AdminProjectsList() {
   return (
     <PageContainer>
       <SideBar></SideBar>
-      <div>
+      <ContentContainer>
         <Header />
 
         <ProjectsContainer>
@@ -92,7 +93,7 @@ export function AdminProjectsList() {
             </Pagination>
           </ListContainer>
         </ProjectsContainer>
-      </div>
+      </ContentContainer>
     </PageContainer>
   )
 }
