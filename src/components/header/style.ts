@@ -7,6 +7,11 @@ export const HeaderContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 995;
+  background-color: #fff;
 `
 
 export const HeaderInfo = styled.div`
