@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { LoginPage } from './pages/login/index.tsx'
 import { AdminProjectsList } from './pages/admin/projectsList/index.tsx'
 import { AdminProjectsSignIn } from './pages/admin/projectsSignIn/index.tsx'
+import { AdminUsersList } from './pages/admin/usersList/index.tsx'
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: 'admin/projectsList/projectsSignIn',
     element: <AdminProjectsSignIn />,
+  },
+  {
+    path: 'admin/usersList',
+    element: <AdminUsersList />,
   },
 ])
 
