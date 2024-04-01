@@ -3,7 +3,9 @@ import styled from 'styled-components'
 export const SideBarContainer = styled.div`
   width: 250px;
   height: 100vh;
-  position: sticky;
+  position: fixed;
+  background-color: #fff;
+  z-index: 999;
   border-right: 1px solid #94a3b8;
 `
 export const SideBarHeader = styled.div`

@@ -12,7 +12,7 @@ export const ContentContainer = styled.div`
 `
 
 export const ProjectsContainer = styled.div`
-  margin: 48px;
+  margin: 122px 48px 48px 298px;
 `
 
 export const Breadcrumbs = styled.span`
