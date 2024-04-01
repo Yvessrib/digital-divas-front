@@ -1,9 +1,9 @@
-import { styled } from 'styled-components'
+import  styled  from 'styled-components'
 
 export const SideBar = styled.div`
   width: 252px;
   height: 100vh;
-  background-color: #aaaaaa;
+  background-color: #aaaAaa;;
 `
 export const PageContainer = styled.div`
   display: flex;

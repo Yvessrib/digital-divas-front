@@ -16,6 +16,7 @@ import PlusIcon2 from '../../../assets/icons/Plus2.svg'
 import projectsData from './teste.json' // Importando os dados do JSON
 import { SideBar } from '../../../components/sideBar'
 import { Header } from '../../../components/header'
+import { Link } from 'react-router-dom'
 
 export function AdminProjectsList() {
   return (
@@ -35,11 +36,14 @@ export function AdminProjectsList() {
                   Importar Projeto
                 </div>
               </button>
+
               <button>
-                <div>
-                  <img src={PlusIcon2} alt="" />
-                  Novo Projeto
-                </div>
+                <Link to={'projectsSignIn'}>
+                  <div>
+                    <img src={PlusIcon2} alt="" />
+                    Novo Projeto
+                  </div>
+                </Link>
               </button>
             </ProjectsHeaderButtons>
           </ProjectsHeader>
