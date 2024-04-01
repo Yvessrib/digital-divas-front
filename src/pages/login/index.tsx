@@ -42,7 +42,10 @@ export function LoginPage() {
               <button>
                 <div>
                   <span>Entrar</span>
-                  <Link to={'/admin/projectsList'}>
+                  <Link
+                    to={'/admin/projectsList'}
+                    style={{ textDecoration: 'none' }}
+                  >
                     <img src={iconBotao} alt="" />
                   </Link>
                 </div>
