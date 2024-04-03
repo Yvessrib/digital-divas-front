@@ -4,12 +4,13 @@ import { Layout } from './pages/appLayout'
 import { AdminProjectsList } from './pages/admin/projectsList'
 import { AdminProjectsSignIn } from './pages/admin/projectsSignIn'
 import { AdminUsersList } from './pages/admin/usersList'
-import { LoginLayout } from './pages/loginLayout'
 import { LoginFirstAccess } from './pages/loginPages/loginFirstAcess'
 import { LoginPage } from './pages/loginPages/login'
 import { LoginPasswordRefactor } from './pages/loginPages/loginPasswordRefactor'
 import { LoginPasswordCode } from './pages/loginPages/loginCode'
 import { LoginPasswordChange } from './pages/loginPages/loginPasswordChange'
+import { LoginLayout } from './pages/loginLayout'
+
 export function App() {
   return (
     <Router>

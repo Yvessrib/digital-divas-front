@@ -1,0 +1,23 @@
+import styled from 'styled-components'
+
+export const StyledButton = styled.button`
+  background-color: ${(props) => props.theme.neutral_00};
+  border-radius: 100px;
+  border: 1px solid ${(props) => props.theme.neutral_10};
+  color: ${(props) => props.theme.blue_100};
+  font-size: 14px;
+  font-weight: bold;
+
+  text-wrap: nowrap;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  padding: 12px 24px;
+
+  div {
+    display: flex;
+    gap: 8px;
+    margin: 0px 22px;
+  }
+`

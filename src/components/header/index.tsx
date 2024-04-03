@@ -1,4 +1,4 @@
-import { HeaderContainer, HeaderIcon, HeaderInfo, HeaderUser } from './style'
+import { HeaderContainer, HeaderIcon, HeaderInfo, HeaderUser } from './styles'
 
 export function Header() {
   return (
