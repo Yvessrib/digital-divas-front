@@ -20,7 +20,7 @@ import PlusIcon2 from '../../../assets/icons/Plus2.svg'
 export function AdminProjectsSignIn() {
   return (
     <ProjectsContainer>
-      <Breadcrumbs>Fetin 2024 / Projetos / Novo Projeto</Breadcrumbs>
+      <Breadcrumbs>Fetin 2024 / Projetos / Lista /Novo Projeto</Breadcrumbs>
       <ProjectsHeader>
         <span>Novo Projeto</span>
       </ProjectsHeader>
