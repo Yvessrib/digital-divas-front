@@ -26,7 +26,7 @@ export const LoginContent = styled.div`
   img:nth-child(1) {
     width: 123px;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
 `
 

@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-
 import digitalLogo from '../../assets/imgs/DigitalDivasLogo.svg'
 import loginFetinLogo from '../../assets/imgs/logoLogin.svg'
 import { LoginContainer, LoginContent, LoginFooter, LoginImg } from './styles'
