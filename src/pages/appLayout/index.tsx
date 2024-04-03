@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
-import { Header } from '../components/header'
-import { SideBar } from '../components/sideBar'
+import { Header } from '../../components/header'
+import { SideBar } from '../../components/sideBar'
 import { ContentContainer, PageContainer } from './styles'
 
 interface LayouProps {
