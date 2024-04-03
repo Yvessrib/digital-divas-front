@@ -10,7 +10,6 @@ import { LoginPage } from './pages/loginPages/login'
 import { LoginPasswordRefactor } from './pages/loginPages/loginPasswordRefactor'
 import { LoginPasswordCode } from './pages/loginPages/loginCode'
 import { LoginPasswordChange } from './pages/loginPages/loginPasswordChange'
-
 export function App() {
   return (
     <Router>
