@@ -1,13 +1,13 @@
 import { FormFooter, InputContainer, LoginHeader } from './styles'
-import iconBotao from '../../assets/icons/Plus2.svg'
+import iconBotao from '../../../assets/icons/Plus2.svg'
 import { Link } from 'react-router-dom'
 
-export function LoginFirstAccess() {
+export function LoginPasswordChange() {
   return (
     <div>
       <LoginHeader>
-        <span>Primeiro acesso</span>
-        <span>Crie uma nova senha.</span>
+        <span>Redefinir senha</span>
+        <span>Redefina sua senha.</span>
       </LoginHeader>
       <div>
         <form>
