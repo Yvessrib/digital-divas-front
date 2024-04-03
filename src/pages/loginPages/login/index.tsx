@@ -6,7 +6,7 @@ import {
   LoginNotice,
 } from './style'
 
-import iconBotao from '../../assets/icons/Plus2.svg'
+import iconBotao from '../../../assets/icons/Plus2.svg'
 import { Link } from 'react-router-dom'
 
 export function LoginPage() {
@@ -29,7 +29,12 @@ export function LoginPage() {
             <input type="password" placeholder="Insira sua senha..."></input>
           </InputContainer>
           <FormFooter>
-            <a>Esqueci minha senha</a>
+            <Link
+              to={'/login/passwordRefactor'}
+              style={{ textDecoration: 'none' }}
+            >
+              <a>Esqueci minha senha</a>
+            </Link>
             <Link to={'/login/firstAcess'} style={{ textDecoration: 'none' }}>
               <button>
                 <div>

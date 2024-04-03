@@ -1,12 +1,15 @@
 /* eslint-disable react/no-children-prop */
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { LoginPage } from './pages/login'
 import { Layout } from './pages/appLayout'
 import { AdminProjectsList } from './pages/admin/projectsList'
 import { AdminProjectsSignIn } from './pages/admin/projectsSignIn'
 import { AdminUsersList } from './pages/admin/usersList'
 import { LoginLayout } from './pages/loginLayout'
-import { LoginFirstAccess } from './pages/loginFirstAcess'
+import { LoginFirstAccess } from './pages/loginPages/loginFirstAcess'
+import { LoginPage } from './pages/loginPages/login'
+import { LoginPasswordRefactor } from './pages/loginPages/loginPasswordRefactor'
+import { LoginPasswordCode } from './pages/loginPages/loginCode'
+import { LoginPasswordChange } from './pages/loginPages/loginPasswordChange'
 
 export function App() {
   return (
@@ -16,6 +19,18 @@ export function App() {
         <Route
           path="/login/firstAcess"
           element={<LoginLayout children={<LoginFirstAccess />} />}
+        />
+        <Route
+          path="/login/passwordRefactor"
+          element={<LoginLayout children={<LoginPasswordRefactor />} />}
+        />
+        <Route
+          path="/login/passwordCode"
+          element={<LoginLayout children={<LoginPasswordCode />} />}
+        />
+        <Route
+          path="/login/passwordChange"
+          element={<LoginLayout children={<LoginPasswordChange />} />}
         />
         <Route
           path="admin/projectsList"
