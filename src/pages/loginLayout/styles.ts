@@ -9,7 +9,6 @@ export const LoginContainer = styled.div`
 
 export const LoginImg = styled.div`
   display: flex;
-  background-color: aqua;
   width: 60%;
   background-image: url(${loginImg});
   background-size: cover;
@@ -27,7 +26,7 @@ export const LoginContent = styled.div`
   img:nth-child(1) {
     width: 123px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 `
 

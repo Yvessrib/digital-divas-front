@@ -21,7 +21,7 @@ export const ProjectsHeader = styled.div`
 
   span {
     font-size: 40px;
-    color: #1e293b;
+    color: ${(props) => props.theme.blue95};
     font-weight: bold;
   }
 `
@@ -29,7 +29,7 @@ export const ProjectsHeader = styled.div`
 export const Breadcrumbs = styled.span`
   font-size: 12px;
   font-weight: 500;
-  color: #94a3b8;
+  color: ${(props) => props.theme.neutral40};
   margin-bottom: 20px;
 `
 
@@ -52,15 +52,15 @@ export const ProjectsHeaderButtons = styled.div`
   }
 
   button:nth-child(1) {
-    background-color: #fff;
-    color: #1e293b;
-    border-color: #eaeaea;
+    background-color: ${(props) => props.theme.neutral00};
+    color: ${(props) => props.theme.blue95};
+    border-color: ${(props) => props.theme.neutral10};
   }
 
   button:nth-child(2) {
-    background-color: #306bff;
-    color: #fff;
-    border-color: #306bff;
+    background-color: ${(props) => props.theme.blue75};
+    color: ${(props) => props.theme.neutral00};
+    border-color: ${(props) => props.theme.blue75};
     cursor: pointer;
     text-decoration: none;
   }
@@ -77,23 +77,23 @@ export const ListHead = styled.div`
   flex-direction: row;
 
   button {
-    background-color: #fff;
+    background-color: ${(props) => props.theme.neutral00};
     border: none;
     font-size: 14px;
     font-weight: bold;
     padding: 12px 24px;
     z-index: 1;
-    border-bottom: 1px solid #989898;
+    border-bottom: 1px solid ${(props) => props.theme.neutral40};
   }
 
   button:nth-child(1) {
-    border-bottom: 1px solid #0159ea;
-    color: #1e293b;
+    border-bottom: 1px solid ${(props) => props.theme.blue75};
+    color: ${(props) => props.theme.blue95};
   }
 `
 export const Divider = styled.div`
   position: relative;
-  border-bottom: 1px solid #989898;
+  border-bottom: 1px solid ${(props) => props.theme.neutral40};
   top: -1px;
   z-index: 0;
 `
@@ -110,13 +110,13 @@ export const ListContent = styled.div`
     th {
       font-size: 12px;
       font-weight: bold;
-      color: #1e293b;
+      color: ${(props) => props.theme.blue95};
       text-align: left;
       padding: 12px 16px;
     }
 
     tr {
-      border-bottom: 1px solid #dddddd;
+      border-bottom: 1px solid ${(props) => props.theme.neutral60};
       padding: 12px 6px;
     }
 
@@ -133,5 +133,5 @@ export const Pagination = styled.div`
   justify-content: space-between;
   font-size: 12px;
   padding: 10px 0px;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid ${(props) => props.theme.neutral60};
 `
