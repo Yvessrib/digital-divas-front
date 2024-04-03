@@ -14,8 +14,8 @@ import {
   Breadcrumbs,
 } from './styles'
 
-import PlusIcon from '../../../assets/icons/Plus.svg'
-import PlusIcon2 from '../../../assets/icons/Plus2.svg'
+import { ButtonWhite } from '../../../components/buttonWhite'
+import { ButtonBlue } from '../../../components/buttonBlue'
 
 export function AdminProjectsSignIn() {
   return (
@@ -104,27 +104,12 @@ export function AdminProjectsSignIn() {
           </div>
           <ButtonDiv>
             <Divider2></Divider2>
-            <button>
-              <div>
-                <img src={PlusIcon} alt="" />
-                <span>Adicionar integrante</span>
-              </div>
-            </button>
+            <ButtonWhite text="Adicionar integrante" to="" />
             <Divider2></Divider2>
           </ButtonDiv>
           <FormsFooter>
-            <button>
-              <div>
-                <img src={PlusIcon} alt="" />
-                <span>Cancelar</span>
-              </div>
-            </button>
-            <button>
-              <div>
-                <img src={PlusIcon2} alt="" />
-                <span>Criar Projeto</span>
-              </div>
-            </button>
+            <ButtonWhite text="Adicionar integrante" to="" />
+            <ButtonBlue text="Criar Projeto" to="" />
           </FormsFooter>
         </form>
       </ProjectFormContainer>

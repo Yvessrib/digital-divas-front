@@ -7,7 +7,7 @@ export const ProjectsContainer = styled.div`
 export const Breadcrumbs = styled.span`
   font-size: 12px;
   font-weight: 500;
-  color: ${(props) => props.theme.neutral40};
+  color: ${(props) => props.theme.neutral_40};
 `
 
 export const ProjectsHeader = styled.div`
@@ -17,7 +17,7 @@ export const ProjectsHeader = styled.div`
 
   span {
     font-size: 40px;
-    color: ${(props) => props.theme.blue95};
+    color: ${(props) => props.theme.blue_100};
     font-weight: bold;
   }
 `
@@ -25,34 +25,6 @@ export const ProjectsHeader = styled.div`
 export const ProjectsHeaderButtons = styled.div`
   display: flex;
   gap: 16px;
-
-  button {
-    border-radius: 100px;
-    border: 1px solid;
-
-    font-size: 14px;
-    font-weight: bold;
-
-    div {
-      display: flex;
-      gap: 8px;
-      margin: 0px 22px;
-    }
-  }
-
-  button:nth-child(1) {
-    background-color: ${(props) => props.theme.neutral00};
-    color: ${(props) => props.theme.blue95};
-    border-color: ${(props) => props.theme.neutral10};
-  }
-
-  button:nth-child(2) {
-    background-color: ${(props) => props.theme.blue70};
-    color: ${(props) => props.theme.neutral00};
-    border-color: ${(props) => props.theme.blue70};
-    cursor: pointer;
-    text-decoration: none;
-  }
 `
 
 export const ListContainer = styled.div`
@@ -66,23 +38,23 @@ export const ListHead = styled.div`
   flex-direction: row;
 
   button {
-    background-color: ${(props) => props.theme.neutral00};
+    background-color: ${(props) => props.theme.neutral_00};
     border: none;
     font-size: 14px;
     font-weight: bold;
     padding: 12px 24px;
     z-index: 1;
-    border-bottom: 1px solid ${(props) => props.theme.neutral40};
+    border-bottom: 1px solid ${(props) => props.theme.neutral_40};
   }
 
   button:nth-child(1) {
-    border-bottom: 1px solid ${(props) => props.theme.blue75};
-    color: ${(props) => props.theme.blue95};
+    border-bottom: 1px solid ${(props) => props.theme.blue_70};
+    color: ${(props) => props.theme.blue_100};
   }
 `
 export const Divider = styled.div`
   position: relative;
-  border-bottom: 1px solid ${(props) => props.theme.neutral40};
+  border-bottom: 1px solid ${(props) => props.theme.neutral_40};
   top: -1px;
   z-index: 0;
 `
@@ -99,7 +71,7 @@ export const ListContent = styled.div`
     th {
       font-size: 12px;
       font-weight: bold;
-      color: ${(props) => props.theme.blue95};
+      color: ${(props) => props.theme.blue_100};
       text-align: left;
       padding: 12px 16px;
     }

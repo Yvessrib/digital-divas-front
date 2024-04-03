@@ -1,6 +1,5 @@
 import { FormFooter, InputContainer, LoginHeader } from './styles'
-import iconBotao from '../../../assets/icons/Plus2.svg'
-import { Link } from 'react-router-dom'
+import { ButtonBlue } from '../../../components/buttonBlue'
 
 export function LoginPasswordChange() {
   return (
@@ -23,15 +22,7 @@ export function LoginPasswordChange() {
             ></input>
           </InputContainer>
           <FormFooter>
-            <Link to={'/admin/projectsList'} style={{ textDecoration: 'none' }}>
-              <button>
-                <div>
-                  <span>Entrar</span>
-
-                  <img src={iconBotao} alt="" />
-                </div>
-              </button>
-            </Link>
+            <ButtonBlue text="Entrar" to="/admin/projectsList" />
           </FormFooter>
         </form>
       </div>

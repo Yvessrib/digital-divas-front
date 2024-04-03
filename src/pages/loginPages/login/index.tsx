@@ -1,13 +1,7 @@
-import {
-  Divider,
-  FormFooter,
-  InputContainer,
-  LoginHeader,
-  LoginNotice,
-} from './style'
+import { FormFooter, InputContainer, LoginHeader, LoginNotice } from './style'
 
-import iconBotao from '../../../assets/icons/Plus2.svg'
 import { Link } from 'react-router-dom'
+import { ButtonBlue } from '../../../components/buttonBlue'
 
 export function LoginPage() {
   return (
@@ -35,19 +29,10 @@ export function LoginPage() {
             >
               <a>Esqueci minha senha</a>
             </Link>
-            <Link to={'/login/firstAcess'} style={{ textDecoration: 'none' }}>
-              <button>
-                <div>
-                  <span>Entrar</span>
-
-                  <img src={iconBotao} alt="" />
-                </div>
-              </button>
-            </Link>
+            <ButtonBlue text="Entrar" to="/login/firstAcess" />
           </FormFooter>
         </form>
       </div>
-      <Divider></Divider>
       <LoginNotice>
         <span>Ainda não possui cadastro?</span>
         <span>

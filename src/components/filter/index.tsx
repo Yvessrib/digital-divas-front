@@ -1,4 +1,4 @@
-import { FilterContainer, SearchBar } from './style'
+import { FilterContainer, SearchBar } from './styles'
 
 import FilterIcon from '../../assets/icons/filterIcon.svg'
 

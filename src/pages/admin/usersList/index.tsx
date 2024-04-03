@@ -10,11 +10,10 @@ import {
   ProjectsHeaderButtons,
 } from './styles'
 
-import PlusIcon from '../../../assets/icons/Plus.svg'
-import PlusIcon2 from '../../../assets/icons/Plus2.svg'
 import usersData from './teste.json' // Importando os dados do JSON
-import { Link } from 'react-router-dom'
 import { FilterBarAndButton } from '../../../components/filter'
+import { ButtonWhite } from '../../../components/buttonWhite'
+import { ButtonBlue } from '../../../components/buttonBlue'
 
 export function AdminUsersList() {
   return (
@@ -23,24 +22,8 @@ export function AdminUsersList() {
       <ProjectsHeader>
         <span>Todos os Usuários</span>
         <ProjectsHeaderButtons>
-          <button>
-            <div>
-              <img src={PlusIcon} alt="" />
-              Importar Usuário
-            </div>
-          </button>
-
-          <button>
-            <Link
-              to={'projectsSignIn'}
-              style={{ textDecoration: 'none', color: '#FFF' }}
-            >
-              <div>
-                <img src={PlusIcon2} alt="" />
-                Novo Usuário
-              </div>
-            </Link>
-          </button>
+          <ButtonWhite text="Importar Usuário" to="" />
+          <ButtonBlue text="Novo Usuário" to="" />
         </ProjectsHeaderButtons>
       </ProjectsHeader>
       <ListContainer>

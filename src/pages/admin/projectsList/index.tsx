@@ -10,11 +10,10 @@ import {
   ProjectsHeaderButtons,
 } from './styles'
 
-import PlusIcon from '../../../assets/icons/Plus.svg'
-import PlusIcon2 from '../../../assets/icons/Plus2.svg'
 import projectsData from './teste.json' // Importando os dados do JSON
-import { Link } from 'react-router-dom'
 import { FilterBarAndButton } from '../../../components/filter'
+import { ButtonWhite } from '../../../components/buttonWhite'
+import { ButtonBlue } from '../../../components/buttonBlue'
 
 export function AdminProjectsList() {
   return (
@@ -23,24 +22,8 @@ export function AdminProjectsList() {
       <ProjectsHeader>
         <span>Todos os Projetos</span>
         <ProjectsHeaderButtons>
-          <button>
-            <div>
-              <img src={PlusIcon} alt="" />
-              Importar Projeto
-            </div>
-          </button>
-
-          <button>
-            <Link
-              to={'projectsSignIn'}
-              style={{ textDecoration: 'none', color: '#FFF' }}
-            >
-              <div>
-                <img src={PlusIcon2} alt="" />
-                Novo Projeto
-              </div>
-            </Link>
-          </button>
+          <ButtonWhite text="Importar projeto" to="" />
+          <ButtonBlue text="Novo projeto" to="projectsSignIn" />
         </ProjectsHeaderButtons>
       </ProjectsHeader>
 
