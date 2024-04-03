@@ -11,7 +11,7 @@ export const ProjectsHeader = styled.div`
 
   span {
     font-size: 40px;
-    color: #1e293b;
+    color: ${(props) => props.theme.blue95};
     font-weight: bold;
   }
 `
@@ -19,7 +19,7 @@ export const ProjectsHeader = styled.div`
 export const Breadcrumbs = styled.span`
   font-size: 12px;
   font-weight: 500;
-  color: #94a3b8;
+  color: ${(props) => props.theme.neutral40};
   margin-bottom: 20px;
 `
 export const ProjectFormContainer = styled.div`
@@ -29,7 +29,7 @@ export const ProjectFormContainer = styled.div`
     label {
       font-size: 14px;
       font-weight: bold;
-      color: #1e293b;
+      color: ${(props) => props.theme.blue95};
     }
   }
 `
@@ -38,13 +38,13 @@ export const FormsTitle = styled.span`
   margin: 48px 0px 0px 0px;
   font-size: 24px;
   font-weight: bold;
-  color: #1e293b;
+  color: ${(props) => props.theme.blue95};
 `
 
 export const Divider = styled.div`
   width: 100%;
   height: 1px;
-  background-color: #e0e0e0;
+  background-color: ${(props) => props.theme.neutral10};
   margin: 12px 0px;
 `
 
@@ -55,7 +55,7 @@ interface WidthProps {
 export const StyledInput = styled.input<WidthProps>`
   width: ${(props) => (props.width ? props.width : '100%')};
   padding: 12px 16px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid ${(props) => props.theme.neutral20};
   border-radius: 10px;
   margin: 10px 0px 5px 0px;
 `
@@ -68,7 +68,7 @@ export const GeneralInfo = styled.div`
   span {
     font-size: 14px;
     font-weight: 500;
-    color: #94a3b8;
+    color: ${(props) => props.theme.neutral60};
     margin-bottom: 20px;
   }
 `
@@ -86,7 +86,7 @@ export const StudentInfo = styled.div`
 export const Divider2 = styled.div`
   width: 100%;
   height: 1px;
-  border: 1px dashed #dcdcdc;
+  border: 1px dashed ${(props) => props.theme.neutral20};
 `
 export const ButtonDiv = styled.div`
   display: flex;
@@ -98,13 +98,12 @@ export const ButtonDiv = styled.div`
   button {
     border-radius: 100px;
     border: 1px solid;
-    background-color: #fff;
-    color: #1e293b;
-    border-color: #eaeaea;
+    background-color: ${(props) => props.theme.neutral00};
+    color: ${(props) => props.theme.blue95};
+    border-color: ${(props) => props.theme.neutral10};
 
     font-size: 14px;
     font-weight: bold;
-    text-wrap: nowrap;
 
     div {
       display: flex;
@@ -123,13 +122,12 @@ export const FormsFooter = styled.div`
   button {
     border-radius: 100px;
     border: 1px solid;
-    background-color: #fff;
-    color: #1e293b;
-    border-color: #eaeaea;
+    background-color: ${(props) => props.theme.neutral00};
+    color: ${(props) => props.theme.blue95};
+    border-color: ${(props) => props.theme.neutral10};
 
     font-size: 14px;
     font-weight: bold;
-    text-wrap: nowrap;
 
     div {
       display: flex;
@@ -139,14 +137,14 @@ export const FormsFooter = styled.div`
   }
 
   button:nth-child(1) {
-    background-color: #fff;
-    color: #1e293b;
-    border-color: #eaeaea;
+    background-color: ${(props) => props.theme.neutral00};
+    color: ${(props) => props.theme.blue95};
+    border-color: ${(props) => props.theme.neutral10};
   }
 
   button:nth-child(2) {
-    background-color: #306bff;
-    color: #fff;
-    border-color: #306bff;
+    ${(props) => props.theme.blue75};
+    color: ${(props) => props.theme.neutral00};
+    ${(props) => props.theme.blue75};
   }
 `
