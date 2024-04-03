@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 export const LoginHeader = styled.div`
   display: flex;
@@ -40,16 +40,9 @@ export const InputContainer = styled.div`
 export const FormFooter = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin: 30px 0px;
-
-  a {
-    font-size: 14px;
-    font-weight: 400;
-    color: #656565;
-    text-decoration: underline;
-  }
 
   button {
     border-radius: 100px;
@@ -57,6 +50,7 @@ export const FormFooter = styled.div`
     background-color: #306bff;
     color: #fff;
     border-color: #306bff;
+    cursor: pointer;
 
     font-size: 14px;
     font-weight: bold;
@@ -67,33 +61,5 @@ export const FormFooter = styled.div`
       display: flex;
       gap: 8px;
     }
-  }
-`
-
-export const Divider = styled.div`
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px solid #eaeaea;
-`
-
-export const LoginNotice = styled.div`
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #eaeaea;
-
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  span:nth-child(1) {
-    font-size: 20px;
-    font-weight: bold;
-    color: #1e293b;
-  }
-
-  span:nth-child(2) {
-    font-size: 14px;
-    font-weight: 400;
-    color: #656565;
   }
 `
