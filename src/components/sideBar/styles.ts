@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const SideBarContainer = styled.div`
@@ -29,20 +30,26 @@ export const SideBarButtons = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
+`
 
-  button {
-    display: flex;
-    border: none;
-    background-color: #fff;
-    gap: 8px;
+export const StyledNavLink = styled(NavLink)`
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 
-    padding: 12px 0px;
+  border: none;
+  background-color: #fff;
+  padding: 12px 10px;
 
-    font-size: 16px;
-    font-weight: 500;
-    color: #94a3b8;
+  font-size: 16px;
+  font-weight: 500;
+  color: #94a3b8;
 
-    vertical-align: middle;
+  vertical-align: middle;
+
+  &.active {
+    color: #1e293b;
+    background-color: #f8f8f8;
   }
 `
 
