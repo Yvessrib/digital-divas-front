@@ -3,9 +3,8 @@ import {
   SideBarContent,
   SideBarFooter,
   SideBarHeader,
-  Divider,
   SideBarButtons,
-  Copyright,
+  StyledNavLink,
 } from './styles'
 import Logo from '../../assets/imgs/LogoFetinApp.svg'
 import ArrowLeft from '../../assets/icons/arrowLeft.svg'
@@ -13,9 +12,7 @@ import HomeIcon from '../../assets/icons/home-2.svg'
 import CheckIcon from '../../assets/icons/tick-square.svg'
 import CupIcon from '../../assets/icons/cup.svg'
 import ProfileIcon from '../../assets/icons/profile-2user.svg'
-import FetinLogo from '../../assets/imgs/FetinLogo.svg'
-import { Link } from 'react-router-dom'
-
+import DigitalDivasLogo from '../../assets/imgs/DigitalDivasLogo.svg'
 export function SideBar() {
   return (
     <SideBarContainer>
@@ -25,40 +22,35 @@ export function SideBar() {
       </SideBarHeader>
       <SideBarContent>
         <SideBarButtons>
-          <Link to={'/'} style={{ textDecoration: 'none' }}>
-            <button>
-              <img src={HomeIcon} alt="" />
-              <span>Início</span>
-            </button>
-          </Link>
-          <button>
+          <StyledNavLink to={'/'} style={{ textDecoration: 'none' }}>
+            <img src={HomeIcon} alt="" />
+            <span>Início</span>
+          </StyledNavLink>
+          <StyledNavLink to={'/'} style={{ textDecoration: 'none' }}>
             <img src={CheckIcon} alt="" />
             <span>Etapas</span>
-          </button>
-          <Link to={'/admin/projectsList'} style={{ textDecoration: 'none' }}>
-            <button>
-              <img src={CupIcon} alt="" />
-              <span>Projetos</span>
-            </button>
-          </Link>
-          <Link to={'/admin/usersList'} style={{ textDecoration: 'none' }}>
-            <button>
-              <img src={ProfileIcon} alt="" />
-              <span>Usuários</span>
-            </button>
-          </Link>
-          <button>
+          </StyledNavLink>
+          <StyledNavLink
+            to={'/admin/projectsList'}
+            style={{ textDecoration: 'none' }}
+          >
+            <img src={CupIcon} alt="" />
+            <span>Projetos</span>
+          </StyledNavLink>
+          <StyledNavLink
+            to={'/admin/usersList'}
+            style={{ textDecoration: 'none' }}
+          >
+            <img src={ProfileIcon} alt="" />
+            <span>Usuários</span>
+          </StyledNavLink>
+          <StyledNavLink to={'/'} style={{ textDecoration: 'none' }}>
             <img src={ProfileIcon} alt="" />
             <span>Configurações</span>
-          </button>
+          </StyledNavLink>
         </SideBarButtons>
         <SideBarFooter>
-          <Copyright>
-            <span>DESENVOLVIDO POR</span>
-            <span>Digital Divas</span>
-          </Copyright>
-          <Divider></Divider>
-          <img src={FetinLogo} alt="" />
+          <img src={DigitalDivasLogo} alt="" />
         </SideBarFooter>
       </SideBarContent>
     </SideBarContainer>
