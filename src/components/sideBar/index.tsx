@@ -26,7 +26,10 @@ export function SideBar() {
             <img src={HomeIcon} alt="" />
             <span>Início</span>
           </StyledNavLink>
-          <StyledNavLink to={'/'} style={{ textDecoration: 'none' }}>
+          <StyledNavLink
+            to={'/admin/stagesList'}
+            style={{ textDecoration: 'none' }}
+          >
             <img src={CheckIcon} alt="" />
             <span>Etapas</span>
           </StyledNavLink>
