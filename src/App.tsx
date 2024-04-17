@@ -11,6 +11,7 @@ import { LoginPasswordCode } from './pages/loginPages/loginCode'
 import { LoginPasswordChange } from './pages/loginPages/loginPasswordChange'
 import { LoginLayout } from './pages/loginLayout'
 import { AdminProjectsEdit } from './pages/admin/projectsEdit'
+import { AdminStagesList } from './pages/admin/stageList'
 
 export function App() {
   return (
@@ -48,6 +49,10 @@ export function App() {
         <Route
           path="admin/projectsList/projectEdit"
           element={<Layout children={<AdminProjectsEdit />} />}
+        />
+        <Route
+          path="admin/stagesList"
+          element={<Layout children={<AdminStagesList />} />}
         />
       </Routes>
     </Router>
