@@ -22,7 +22,7 @@ export function AdminProjectsList() {
       <ProjectsHeader>
         <span>Todos os Projetos</span>
         <ProjectsHeaderButtons>
-          <ButtonWhite text="Importar projeto" to="" />
+          <ButtonWhite text="Importar projeto" to="projectEdit" />
           <ButtonBlue text="Novo projeto" to="projectsSignIn" />
         </ProjectsHeaderButtons>
       </ProjectsHeader>
