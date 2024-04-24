@@ -12,6 +12,7 @@ import { LoginPasswordChange } from './pages/loginPages/loginPasswordChange'
 import { LoginLayout } from './pages/loginLayout'
 import { AdminProjectsEdit } from './pages/admin/projectsEdit'
 import { AdminStagesList } from './pages/admin/stageList'
+import { Dashboard } from './pages/user/dashBoard'
 
 export function App() {
   return (
@@ -53,6 +54,10 @@ export function App() {
         <Route
           path="admin/stagesList"
           element={<Layout children={<AdminStagesList />} />}
+        />
+        <Route
+          path="admin/dashboard"
+          element={<Layout children={<Dashboard />} />}
         />
       </Routes>
     </Router>

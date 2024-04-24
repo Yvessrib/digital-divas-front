@@ -5,16 +5,14 @@ import {
   ListHead,
   ProjectsContainer,
   ProjectsHeader,
-  ProjectsHeaderButtons,
 } from './styles'
 
 import { FilterBarAndButton } from '../../../components/filter'
-import { ButtonBlue } from '../../../components/buttonBlue'
 import { StageCard } from '../../../components/stageCard'
 import { SetStateAction, useState } from 'react'
 import { Breadcrumbs } from '../../../components/breadCrumbs'
 
-export function AdminStagesList() {
+export function Dashboard() {
   const [activeFilter, setActiveFilter] = useState('LISTA')
 
   const handleFilterClick = (filter: SetStateAction<string>) => {
@@ -23,12 +21,10 @@ export function AdminStagesList() {
 
   return (
     <ProjectsContainer>
-      <Breadcrumbs text="Fetin 2024 / Etapas / Lista" />
+      <Breadcrumbs text="Fetin 2024 / Dashboard" />
       <ProjectsHeader>
-        <span>Todos as Etapas</span>
-        <ProjectsHeaderButtons>
-          <ButtonBlue text="Nova Etapa" to="" />
-        </ProjectsHeaderButtons>
+        <span>Olá, Bárbara Barbieri!</span>
+        <span>Visualize o andamento dessa edição da Fetin.</span>
       </ProjectsHeader>
       <ListContainer>
         <ListHead>
