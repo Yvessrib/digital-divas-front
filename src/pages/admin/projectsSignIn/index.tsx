@@ -11,16 +11,16 @@ import {
   Divider2,
   ButtonDiv,
   FormsFooter,
-  Breadcrumbs,
 } from './styles'
 
 import { ButtonWhite } from '../../../components/buttonWhite'
 import { ButtonBlue } from '../../../components/buttonBlue'
+import { Breadcrumbs } from '../../../components/breadCrumbs'
 
 export function AdminProjectsSignIn() {
   return (
     <ProjectsContainer>
-      <Breadcrumbs>Fetin 2024 / Projetos / Lista /Novo Projeto</Breadcrumbs>
+      <Breadcrumbs text="Fetin 2024 / Projetos / Lista / Novo Projeto" />
       <ProjectsHeader>
         <span>Novo Projeto</span>
       </ProjectsHeader>

@@ -1,5 +1,4 @@
 import {
-  Breadcrumbs,
   Divider,
   ListContainer,
   ListContent,
@@ -15,6 +14,7 @@ import { FilterBarAndButton } from '../../../components/filter'
 import { ButtonWhite } from '../../../components/buttonWhite'
 import { ButtonBlue } from '../../../components/buttonBlue'
 import { SetStateAction, useState } from 'react'
+import { Breadcrumbs } from '../../../components/breadCrumbs'
 
 export function AdminUsersList() {
   const [activeFilter, setActiveFilter] = useState('ALUNOS')
@@ -25,7 +25,7 @@ export function AdminUsersList() {
 
   return (
     <ProjectsContainer>
-      <Breadcrumbs>Fetin 2024 / Usuários / Lista</Breadcrumbs>
+      <Breadcrumbs text="Fetin 2024 / Usuários / Lista" />
       <ProjectsHeader>
         <span>Todos os Usuários</span>
         <ProjectsHeaderButtons>
