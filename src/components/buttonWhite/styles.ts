@@ -7,6 +7,7 @@ export const StyledButton = styled.button`
   color: ${(props) => props.theme.blue_100};
   font-size: 14px;
   font-weight: bold;
+  transition: 0.2s all;
 
   text-wrap: nowrap;
 
@@ -19,5 +20,11 @@ export const StyledButton = styled.button`
     display: flex;
     gap: 8px;
     margin: 0px 22px;
+  }
+
+  &:hover {
+    background-color: ${(props) => props.theme.blue_70};
+    color: ${(props) => props.theme.neutral_00};
+    border-color: ${(props) => props.theme.blue_70};
   }
 `

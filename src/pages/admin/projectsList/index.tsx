@@ -14,8 +14,15 @@ import projectsData from './teste.json' // Importando os dados do JSON
 import { FilterBarAndButton } from '../../../components/filter'
 import { ButtonWhite } from '../../../components/buttonWhite'
 import { ButtonBlue } from '../../../components/buttonBlue'
+import { SetStateAction, useState } from 'react'
 
 export function AdminProjectsList() {
+  const [activeFilter, setActiveFilter] = useState('TODOS OS NÍVEIS')
+
+  const handleFilterClick = (filter: SetStateAction<string>) => {
+    setActiveFilter(filter)
+  }
+
   return (
     <ProjectsContainer>
       <Breadcrumbs>Fetin 2024 / Projetos / Lista</Breadcrumbs>
@@ -29,11 +36,36 @@ export function AdminProjectsList() {
 
       <ListContainer>
         <ListHead>
-          <button>Todos os níveis</button>
-          <button>Nível 1</button>
-          <button>Nível 2</button>
-          <button>Nível 3</button>
-          <button>Nível 4</button>
+          <button
+            className={activeFilter === 'TODOS OS NÍVEIS' ? 'active' : ''}
+            onClick={() => handleFilterClick('TODOS OS NÍVEIS')}
+          >
+            TODOS OS NÍVEIS
+          </button>
+          <button
+            className={activeFilter === 'NÍVEL 1' ? 'active' : ''}
+            onClick={() => handleFilterClick('NÍVEL 1')}
+          >
+            NÍVEL 1
+          </button>
+          <button
+            className={activeFilter === 'NÍVEL 2' ? 'active' : ''}
+            onClick={() => handleFilterClick('NÍVEL 2')}
+          >
+            NÍVEL 2
+          </button>
+          <button
+            className={activeFilter === 'NÍVEL 3' ? 'active' : ''}
+            onClick={() => handleFilterClick('NÍVEL 3')}
+          >
+            NÍVEL 3
+          </button>
+          <button
+            className={activeFilter === 'NÍVEL 4' ? 'active' : ''}
+            onClick={() => handleFilterClick('NÍVEL 4')}
+          >
+            NÍVEL 4
+          </button>
         </ListHead>
         <Divider></Divider>
         <FilterBarAndButton />

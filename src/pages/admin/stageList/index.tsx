@@ -12,8 +12,15 @@ import {
 import { FilterBarAndButton } from '../../../components/filter'
 import { ButtonBlue } from '../../../components/buttonBlue'
 import { StageCard } from '../../../components/stageCard'
+import { SetStateAction, useState } from 'react'
 
 export function AdminStagesList() {
+  const [activeFilter, setActiveFilter] = useState('LISTA')
+
+  const handleFilterClick = (filter: SetStateAction<string>) => {
+    setActiveFilter(filter)
+  }
+
   return (
     <ProjectsContainer>
       <Breadcrumbs>Fetin 2024 / Etapas / Lista</Breadcrumbs>
@@ -25,9 +32,24 @@ export function AdminStagesList() {
       </ProjectsHeader>
       <ListContainer>
         <ListHead>
-          <button>LISTA</button>
-          <button>TABELA</button>
-          <button>CALENDÁRIO</button>
+          <button
+            className={activeFilter === 'LISTA' ? 'active' : ''}
+            onClick={() => handleFilterClick('LISTA')}
+          >
+            LISTA
+          </button>
+          <button
+            className={activeFilter === 'TABELA' ? 'active' : ''}
+            onClick={() => handleFilterClick('TABELA')}
+          >
+            TABELA
+          </button>
+          <button
+            className={activeFilter === 'CALENDÁRIO' ? 'active' : ''}
+            onClick={() => handleFilterClick('CALENDÁRIO')}
+          >
+            CALENDÁRIO
+          </button>
         </ListHead>
         <Divider></Divider>
         <FilterBarAndButton />
