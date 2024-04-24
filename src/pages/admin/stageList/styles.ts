@@ -58,9 +58,15 @@ export const ListHead = styled.div`
     border-bottom: 1px solid ${(props) => props.theme.neutral_40};
   }
 
-  button:nth-child(1) {
+  button.active {
     border-bottom: 1px solid ${(props) => props.theme.blue_70};
-    color: ${(props) => props.theme.blue95};
+    color: ${(props) => props.theme.blue_100};
+  }
+
+  gap: 4px;
+  button:hover {
+    border-bottom: 1px solid ${(props) => props.theme.blue_70};
+    background-color: ${(props) => props.theme.neutral_05};
   }
 `
 export const Divider = styled.div`

@@ -14,8 +14,15 @@ import usersData from './teste.json' // Importando os dados do JSON
 import { FilterBarAndButton } from '../../../components/filter'
 import { ButtonWhite } from '../../../components/buttonWhite'
 import { ButtonBlue } from '../../../components/buttonBlue'
+import { SetStateAction, useState } from 'react'
 
 export function AdminUsersList() {
+  const [activeFilter, setActiveFilter] = useState('ALUNOS')
+
+  const handleFilterClick = (filter: SetStateAction<string>) => {
+    setActiveFilter(filter)
+  }
+
   return (
     <ProjectsContainer>
       <Breadcrumbs>Fetin 2024 / Usuários / Lista</Breadcrumbs>
@@ -28,9 +35,24 @@ export function AdminUsersList() {
       </ProjectsHeader>
       <ListContainer>
         <ListHead>
-          <button>ALUNOS</button>
-          <button>ORIENTADORES</button>
-          <button>ADMINSTRADORES</button>
+          <button
+            className={activeFilter === 'ALUNOS' ? 'active' : ''}
+            onClick={() => handleFilterClick('ALUNOS')}
+          >
+            ALUNOS
+          </button>
+          <button
+            className={activeFilter === 'ORIENTADORES' ? 'active' : ''}
+            onClick={() => handleFilterClick('ORIENTADORES')}
+          >
+            ORIENTADORES
+          </button>
+          <button
+            className={activeFilter === 'ADMINSTRADORES' ? 'active' : ''}
+            onClick={() => handleFilterClick('ADMINSTRADORES')}
+          >
+            ADMINSTRADORES
+          </button>
         </ListHead>
         <Divider></Divider>
         <FilterBarAndButton />
