@@ -20,7 +20,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<LoginLayout children={<LoginPage />} />} />
         <Route
-          path="/login/firstAcess"
+          path="/login/firstAccess"
           element={<LoginLayout children={<LoginFirstAccess />} />}
         />
         <Route
