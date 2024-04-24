@@ -22,7 +22,10 @@ export function SideBar() {
       </SideBarHeader>
       <SideBarContent>
         <SideBarButtons>
-          <StyledNavLink to={'/'} style={{ textDecoration: 'none' }}>
+          <StyledNavLink
+            to={'/admin/dashboard'}
+            style={{ textDecoration: 'none' }}
+          >
             <img src={HomeIcon} alt="" />
             <span>Início</span>
           </StyledNavLink>

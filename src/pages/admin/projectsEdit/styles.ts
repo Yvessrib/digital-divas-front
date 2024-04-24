@@ -16,12 +16,6 @@ export const ProjectsHeader = styled.div`
   }
 `
 
-export const Breadcrumbs = styled.span`
-  font-size: 12px;
-  font-weight: 500;
-  color: ${(props) => props.theme.neutral_40};
-  margin-bottom: 20px;
-`
 export const ProjectFormContainer = styled.div`
   margin-top: 48px;
 
