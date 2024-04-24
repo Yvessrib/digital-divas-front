@@ -16,14 +16,17 @@ export function LoginFirstAccess() {
       return
     }
 
-    const response = await fetch(`${process.env.URL}/auth/firstAccess`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
+    const response = await fetch(
+      `https://digital-divas-back.onrender.com/auth/firstAccess`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+        credentials: 'include',
       },
-      body: JSON.stringify(formData),
-      credentials: 'include',
-    })
+    )
 
     console.log(response)
 

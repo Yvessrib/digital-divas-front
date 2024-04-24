@@ -18,14 +18,17 @@ export function LoginPage() {
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault()
 
-    const response = await fetch(`${process.env.URL}/auth`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
+    const response = await fetch(
+      `https://digital-divas-back.onrender.com/auth`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+        credentials: 'include',
       },
-      body: JSON.stringify(formData),
-      credentials: 'include',
-    })
+    )
 
     const data = await response.json()
 
